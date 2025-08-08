@@ -22,7 +22,7 @@ app.use(express.json()); // in case you want to parse JSON bodies
 
 // Route
 
-app.get("/", (req, res) => {
+app.use("/", (req, res) => {
   res.send("API Working");
 });
 app.use("/api/user", userRouter)  
