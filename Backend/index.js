@@ -15,7 +15,9 @@ ConnectDB();
 ConnectCloudinary(); 
 
 // Middleware (should come before routes)
-app.use(cors());
+app.use(cors({
+  origin:"https://fyp-1-azmy.vercel.app/"
+}));
 app.use(express.json()); // in case you want to parse JSON bodies
 
 
