@@ -33,6 +33,7 @@ const addProduct = async (req,res) => {
     date : Date.now()
   }
   const products = new productModel(productData)
+  
 
      await products.save();     
   res.status(201).json({success: true, message: "Product added to the database successfully"})
@@ -49,6 +50,8 @@ const addProduct = async (req,res) => {
   const ProductList = async (req,res) => {
 try {
   const products = await productModel.find({})
+
+  
    res.status(201).json({
   success: true,
  products

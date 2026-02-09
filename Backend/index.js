@@ -22,9 +22,7 @@ app.use(express.json()); // in case you want to parse JSON bodies
 
 // Route
 
-app.use("/", (req, res) => {
-  res.send("API Working");
-});
+
 app.use("/api/user", userRouter)  
 app.use("/api/product", productRouter)  
 app.use("/api/cart", cartRouter)
@@ -33,6 +31,6 @@ app.use("/api/order", orderRouter)
 
  
  app.listen(port, () => {
-      console.log(`✅ Server is listening on port ${port}`);
+      console.log(`Server is listening on port ${port}`);
     });
 

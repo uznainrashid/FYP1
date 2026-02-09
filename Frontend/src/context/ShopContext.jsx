@@ -76,6 +76,8 @@ const getCartAmount = ()=>{
  const fetchProducts = async()=>{
     try {
         const response = await axios.get(backendURL + "/api/product/list")
+        console.log("RESPONSE", response);
+        
         if (response.data.success) {
         setProducts(response.data.products)     
         } else {
