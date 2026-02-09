@@ -72,12 +72,10 @@ const getCartAmount = ()=>{
     return totalAmount;
 
   }
-console.log("Current Backend URL:", backendURL);
+
  const fetchProducts = async()=>{
     try {
-        const response = await axios.get(backendURL + "/api/product/list")
-        console.log("RESPONSE", response);
-        
+        const response = await axios.get(backendURL + "/api/product/list") 
         if (response.data.success) {
         setProducts(response.data.products)     
         } else {
