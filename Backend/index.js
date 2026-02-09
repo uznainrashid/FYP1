@@ -24,7 +24,10 @@ app.use(express.json()); // in case you want to parse JSON bodies
 
 // Route
 
-
+app.get('/', (req, res) => {
+  res.send('Welcome to the backend server!')
+}
+)
 app.use("/api/user", userRouter)  
 app.use("/api/product", productRouter)  
 app.use("/api/cart", cartRouter)
