@@ -17,6 +17,30 @@ Backend: Node.js, Express.js
 Database: MongoDB with Mongoose ODM
 
 Deployment: Vercel (Frontend & Backend)
+# 🛒 SmartBuy - Full Stack E-commerce & Agriculture Platform
+
+SmartBuy is a robust, full-stack application built using the MERN stack. It is designed to serve as a modern e-commerce solution with integrated agriculture-focused features like daily market rates and bilingual support. This project was developed as a **Final Year Project (FYP)**.
+
+## 📂 Folder Structure
+
+The repository is organized into three main modules to ensure a clean separation of concerns:
+
+```text
+FYP1/
+├── Admin/                 # Admin Dashboard (React/Vite)
+│   ├── src/               # UI components and logic for store management
+│   ├── public/            # Static assets
+│   └── package.json       # Admin-side dependencies
+├── Backend/               # Server-side Logic (Node.js/Express)
+│   ├── models/            # Database schemas (Mongoose/PostgreSQL)
+│   ├── routes/            # API endpoints
+│   ├── controllers/       # Business logic for requests
+│   └── index.js           # Server entry point
+├── Frontend/              # Client-side Application (React/Vite)
+│   ├── src/               # User-facing features and marketplace
+│   ├── assets/            # Styling and images
+│   └── package.json       # Frontend dependencies
+└── .gitignore             # Configuration to ignore node_modules and .env files
 
 🚀 Installation & Setup
 Clone the Project:
